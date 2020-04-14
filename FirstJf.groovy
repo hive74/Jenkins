@@ -13,12 +13,12 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'echo Hello From Pipeline'
+                sh 'whoami'
             }
         }
         stage("Second step") {
             steps {
-                sh 'time'
+                sh 'ipconfig'
             }
         }
     }
