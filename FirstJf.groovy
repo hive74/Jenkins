@@ -13,12 +13,12 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'whoami'
+                sh 'pwd'
             }
         }
         stage("Second step") {
             steps {
-                sh 'ipconfig'
+                sh 'ifconfig'
             }
         }
     }
