@@ -20,14 +20,14 @@ pipeline {
             steps {
                 sh 'ifconfig'
             }
+        }    
         stage("Docker HW") {
             steps {
                     echo " ========== image build ========== "
                     dir ('docker/lesson2') {
                         sh 'docker build . '
                         }
-                    }
-            }
+                   }
         }
     }
 }
