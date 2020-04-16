@@ -27,6 +27,7 @@ pipeline {
                         sh 'docker build . '
                         }
                     }
+            }
         }
     }
 }
